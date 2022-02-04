@@ -1,12 +1,14 @@
+import { BrowserRouter } from 'react-router-dom'
 import Layout from './components/Layout';
+import AppRouter from './routes';
 import CreateStyle from './styles/global';
 
 function App() {
   return (
     <Layout>
-      <div className="App">
-        Hello World!
-      </div>
+          <BrowserRouter>
+            <AppRouter />
+          </BrowserRouter>
         <CreateStyle />
     </Layout>
   );
